@@ -1,0 +1,121 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos del banner */
+.banner {
+    width: 30cm; 
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #0077cc; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Contenedor del logo alineado a la izquierda */
+.logo-container {
+    position: absolute;
+    top: 20px; /* Ajustar según sea necesario */
+    left: 20px; /* Ajustar según sea necesario */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos de texto del banner */
+.banner h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0077cc;
+}
+
+.banner h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+    padding: 0 10px; 
+}
+
+/* Estilos de imagen QR */
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los enlaces */
+a {
+    font-size: 20px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptaciones para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .logo-container {
+        top: 10px; /* Ajustar para pantallas pequeñas */
+        left: 10px; /* Ajustar para pantallas pequeñas */
+    }
+
+    .logo {
+        width: 70px; /* Ajustar el tamaño del logo en pantallas más pequeñas */
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .qr-code {
+        width: 150px;
+        height: 150px;
+    }
+}
